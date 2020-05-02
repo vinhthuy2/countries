@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.items {
+  list-style-type: none;
+  min-width: 300px;
+}
+
+.items a {
+  display: block;
+  padding: 12px;
+  text-align: center;
+  text-decoration: none;
+  color: #555555;
+}
+
+.items a:hover {
+  color: #2591da;
+  background-color: #f1f1f1;
+  background-image: radial-gradient(
+    closest-corner at 50% 50%,
+    #f5f5f5 20%,
+    white 80%
+  );
+}
+
+.items a:nth-child(odd) {
+  border-bottom: solid #cccccc 2px;
+}
