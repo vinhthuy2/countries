@@ -1,0 +1,17 @@
+.flag {
+    width: 56px;
+    height: 32px;
+    margin-right: 8px;
+}
+.item {
+    display: flex;
+    align-items: center;
+    padding: 4px;
+    border-radius: 3px;
+    border: 1px solid #eeeeee;
+    min-height: 42px;
+}
+
+.item:hover {
+    background-color: #f1f1f1;
+}

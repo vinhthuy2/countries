@@ -1,6 +1,6 @@
 import React from 'react';
 import { Switch, Route, Redirect } from 'react-router-dom';
-import { SearchCountry } from './components/SearchCountries';
+import { SearchCountry } from './components/search-countries/SearchCountries';
 import { Games } from './components/Games';
 import { CusRoute } from './Routes/CusRoute';
 import { Main } from './components/main/Main';
