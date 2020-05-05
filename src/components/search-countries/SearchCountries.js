@@ -8,7 +8,7 @@ export const SearchCountry = () => {
   const [searchResult, setsearchResult] = useState({});
 
   useEffect(() => {
-    const searchTyping = fromEvent(searchInputElement.current, 'keyup')
+    const searchTyping = fromEvent(searchInputElement.current, 'input')
       .pipe(
         debounceTime(50),
         switchMap((e) => {
@@ -55,6 +55,7 @@ export const SearchCountry = () => {
           className={classes.searchInput}
           ref={searchInputElement}
           type="text"
+          defaultValue="viet"
           placeholder="Type name of country"
         />
         <CountryItemList data={searchResult} />

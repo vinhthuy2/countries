@@ -450,8 +450,8 @@ const MOCK = [
   }
 ];
 
-const CountryItemList = ({ data: { items, error } } = {}) => {
-  //   const items = MOCK;
+const CountryItemList = ({ data: { itemsx, error } } = {}) => {
+    const items = MOCK;
   return (
     <ul className={classes.itemList}>
       {items
